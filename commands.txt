@@ -1,1 +1,14 @@
+Create project structure 
+Add app.py, __init__.py, tests/test_app.py, tests/__init__.py(not required), requirements.txt, Dockerfile, 
+.gitignore. 
+
 https://hub.docker.com/settings/security
+
+Get tokens and username and add them to the github secrets
+
+python app.py
+pytest -q
+docker build -t yourname/python-ci-lab:local . 
+docker run --rm yourname/python-ci-lab:local 
+
+then add it in github
